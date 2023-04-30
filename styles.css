@@ -179,7 +179,7 @@
 
 .sidenav {
   height: 100%;
-  width: 160px;
+  width: 140px;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -199,6 +199,12 @@
 
 .sidenav a:hover {
   color: #f1f1f1;
+}
+
+.main {
+  margin-left: 140px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
 }
 
 @media screen and (max-height: 450px) {
