@@ -179,7 +179,7 @@
 
 .sidenav {
   height: 100%;
-  width: 201px;
+  width: 160px;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -189,10 +189,6 @@
   padding-top: 20px;
 }
 
-.game {
-  padding: 6px 8px 6px 16px;
-}
-
 .sidenav a {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
@@ -200,6 +196,20 @@
   color: #818181;
   display: block;
 }
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.game {
+  padding: 6px 8px 6px 16px;
+}
+
 
 .pass {
   padding: 6px 8px 6px 16px;
@@ -216,20 +226,11 @@
   color: rgb(194, 38, 38);
 }
 
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-
 .main {
     margin-left: 201px; /* Same as the width of the sidenav */
     font-size: 28px; /* Increased text to enable scrolling */
     padding: 0px 10px;
   }
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
 
 /* Change the color of links on hover */
 .topnav a:hover {
